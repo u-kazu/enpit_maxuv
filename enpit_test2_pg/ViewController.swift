@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     var alertController: UIAlertController!
+    
+    @IBOutlet weak var inputText: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
