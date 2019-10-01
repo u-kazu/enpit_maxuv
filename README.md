@@ -22,6 +22,6 @@ BookLog
 
 ## タスク管理(Trello)
 
-[Trelloのurl]
+[Trello](https://trello.com/b/VAOitPS1/%E3%82%BF%E3%82%B9%E3%82%AF)
 
 
