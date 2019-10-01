@@ -34,9 +34,17 @@ class ViewController: UIViewController {
     }
     
     
+    
     @IBAction func button(_ sender: UIButton) {
-        alert(title: "Alert!!!",
-        message: "その本は購入済みです！")
+        if (inputText.text == "hoge"){
+            alert(title: "Alert!!!",
+                  message: "その本は購入済みです！")
+        }else if(inputText.text == ""){
+            alert(title: "入力がありません", message:"入力してください")
+        }else{
+            alert(title: "No Problem",
+                  message: "新しい本でしゅ")
+    }
     }
     
     
