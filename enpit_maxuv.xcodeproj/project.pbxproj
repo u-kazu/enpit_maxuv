@@ -15,6 +15,8 @@
 		61461158233AFFDF003DCBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61461156233AFFDF003DCBEC /* LaunchScreen.storyboard */; };
 		61461163233AFFDF003DCBEC /* enpit_test2_pgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61461162233AFFDF003DCBEC /* enpit_test2_pgTests.swift */; };
 		6146116E233AFFDF003DCBEC /* enpit_test2_pgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6146116D233AFFDF003DCBEC /* enpit_test2_pgUITests.swift */; };
+		615A83A6234774E200F07F4E /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615A83A5234774E200F07F4E /* AddController.swift */; };
+		615A83A82347774B00F07F4E /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615A83A72347774B00F07F4E /* BookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		61461169233AFFDF003DCBEC /* enpit_maxuvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enpit_maxuvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6146116D233AFFDF003DCBEC /* enpit_test2_pgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enpit_test2_pgUITests.swift; sourceTree = "<group>"; };
 		6146116F233AFFDF003DCBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615A83A5234774E200F07F4E /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		615A83A72347774B00F07F4E /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		6146114A233AFFDE003DCBEC /* enpit_test2_pg */ = {
 			isa = PBXGroup;
 			children = (
+				615A83A5234774E200F07F4E /* AddController.swift */,
+				615A83A72347774B00F07F4E /* BookViewController.swift */,
 				6146114B233AFFDE003DCBEC /* AppDelegate.swift */,
 				6146114D233AFFDE003DCBEC /* SceneDelegate.swift */,
 				6146114F233AFFDE003DCBEC /* ViewController.swift */,
@@ -261,7 +267,9 @@
 			files = (
 				61461150233AFFDE003DCBEC /* ViewController.swift in Sources */,
 				6146114C233AFFDE003DCBEC /* AppDelegate.swift in Sources */,
+				615A83A82347774B00F07F4E /* BookViewController.swift in Sources */,
 				6146114E233AFFDE003DCBEC /* SceneDelegate.swift in Sources */,
+				615A83A6234774E200F07F4E /* AddController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
