@@ -11,16 +11,22 @@ var Bookshelf = [String]()
 
 class AddController: UIViewController {
     
+    var alertController: UIAlertController!
+    
     @IBOutlet weak var BookTextField: UITextField!
     
 //    private var tableView = UITableView()
     
     @IBAction func BookAdd(_ sender: Any) {
-        Bookshelf.append(BookTextField.text!)
-        BookTextField.text = ""
-        UserDefaults.standard.set( Bookshelf, forKey: "Bookshelf" )
-        
-//        tableView.reloadData()
+        if(BookTextField.text == ""){
+            alert(title: "入力がありません", message:"入力してください")
+        }else{
+            Bookshelf.append(BookTextField.text!)
+            BookTextField.text = ""
+            UserDefaults.standard.set( Bookshelf, forKey: "Bookshelf" )
+            
+        }
+    
         
     }
     
@@ -30,6 +36,25 @@ class AddController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func alert(title:String, message:String) {
+        alertController = UIAlertController(title: title,
+                                   message: message,
+                                   preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK",
+                                       style: .default,
+                                       handler: nil))
+        present(alertController, animated: true)
+    }
+    
+    var number: Int = 0
+    
+    @IBAction func test(_ sender: Any) {
+        number += 1
+//        numberLabel.text = String(number)
+        if number == 5 {
+            self.performSegue(withIdentifier: "testsegue", sender: self)
+        }
+    }
     /*
     // MARK: - Navigation
 

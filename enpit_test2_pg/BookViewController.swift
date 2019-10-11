@@ -11,16 +11,26 @@ import UIKit
 class BookViewController: UIViewController{
     
     @IBOutlet weak var sampleTableView: UITableView!
-    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func reload(_ sender: Any) {
+//        print("hoge")
+        tableView.reloadData()
+        
+    }
     
     
     
     private var tableView = UITableView()
     
-//    private var items: [String] = ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.titleTextAttributes
+            = [NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: 50)!]
+        
+
         
         if UserDefaults.standard.object(forKey: "Bookshelf") != nil {
             Bookshelf = UserDefaults.standard.object(forKey: "Bookshelf") as! [String]
