@@ -31,7 +31,7 @@ class BookViewController: UIViewController{
             = [NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: 50)!]
         
 
-        
+        // データを受け取って変数にぶち込む
         if UserDefaults.standard.object(forKey: "Bookshelf") != nil {
             Bookshelf = UserDefaults.standard.object(forKey: "Bookshelf") as! [String]
         }

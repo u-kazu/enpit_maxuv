@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mqz-zY-kR2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lqd-wb-hUg">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -100,7 +100,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEe-rB-KQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640.625" y="1108.59375"/>
+            <point key="canvasLocation" x="886" y="787"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gOJ-HL-k1d">
+            <objects>
+                <viewController id="Lqd-wb-hUg" customClass="testViewController" customModule="BookLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nnj-vc-OeS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO7-7T-nRK">
+                                <rect key="frame" x="51" y="64" width="665" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wh-25-dXg">
+                                <rect key="frame" x="294" y="453" width="178" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="Lqd-wb-hUg" eventType="touchUpInside" id="OCY-gr-eaO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f3m-z5-vQf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5wM-10-eV5"/>
+                    <connections>
+                        <outlet property="testlabel" destination="iO7-7T-nRK" id="cah-e0-QhC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIR-3K-e6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.9375" y="1557.421875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xbH-YD-Llm">
@@ -116,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBq-vD-tY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406" y="1109"/>
+            <point key="canvasLocation" x="1645" y="787"/>
         </scene>
         <!--BookLog-->
         <scene sceneID="7t4-SH-6f3">
@@ -166,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEc-lJ-2gE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406.25" y="465.82031249999994"/>
+            <point key="canvasLocation" x="1645" y="71"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="spB-NE-ebj">
@@ -180,6 +217,7 @@
                     <connections>
                         <segue destination="yGt-it-M1P" kind="relationship" relationship="viewControllers" id="ntC-6z-T6l"/>
                         <segue destination="EbS-us-kAp" kind="relationship" relationship="viewControllers" id="0CE-NY-jT5"/>
+                        <segue destination="Lqd-wb-hUg" kind="relationship" relationship="viewControllers" id="MHH-zz-S3K"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhZ-kC-GAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +241,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwB-Y5-4k2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640.625" y="465.82031249999994"/>
+            <point key="canvasLocation" x="886" y="71"/>
         </scene>
     </scenes>
 </document>
